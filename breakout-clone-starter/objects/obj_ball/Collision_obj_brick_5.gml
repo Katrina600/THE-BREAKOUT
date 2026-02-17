@@ -11,7 +11,4 @@ instance_destroy(other);
 obj_game.scored +=10;
 
 // Play a different sound for breaking a brick.
-audio_play_sound(sfx_break, 1, false);
-
-// Create another ball after the collsion
-instance_create(); 
+audio_play_sound(sfx_break, 1, false); 
