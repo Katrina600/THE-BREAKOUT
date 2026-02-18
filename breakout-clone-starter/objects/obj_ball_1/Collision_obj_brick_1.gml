@@ -1,4 +1,4 @@
-
+// This is the new, key interaction for this lesson.
 
 // Reverse vertical speed to bounce off the brick.
 vspeed = -vspeed;
@@ -8,9 +8,7 @@ instance_destroy(other);
 
 
 // Add one point to the score.
-obj_game.scored +=10;
-
-instance_create_layer(room_width/2, room_height/2, "Instances", obj_ball_1);
+obj_game.scored ++;
 
 // Play a different sound for breaking a brick.
-audio_play_sound(sfx_break, 1, false); 
+audio_play_sound(sfx_break, 1, false);

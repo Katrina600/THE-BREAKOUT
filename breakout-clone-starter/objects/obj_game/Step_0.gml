@@ -2,7 +2,7 @@
 
 // Check if there are any bricks left in the room.
 // The function instance_number() is a clear way to count instances.
-if (instance_number(obj_brick_2)== 0) {
+if (instance_number(obj_brick) & (obj_brick_2) & (obj_brick_1) & (obj_brick_3) & (obj_brick_4) & (obj_brick_5) == 0) {
     // If no bricks exist, the player wins!
     // For now, we'll just restart the room.
     // A good extension is to show a win message or go to the next level.
@@ -15,14 +15,17 @@ if (instance_exists(obj_ball) && obj_ball.y > room_height + 40) {
     audio_play_sound(sfx_lose_life, 1, false);
     lives_left -= 1;
     instance_destroy(obj_ball); // Destroy the ball.
-
+}
 	
+if (instance_exists(obj_ball_1) && obj_ball_1.y > room_height + 40) {
+	instance_destroy(obj_ball_1);
+}
 
-// Check if the game is over.
+    // Check if the game is over.
     if (lives_left <= 0) {
         // Game Over - restart the whole game.
         game_restart();
-	} else { 
-		instance_create_layer(room_width/2, room_height/2, "Instances", obj_ball); 
-	}
-} 
+    } else {
+        // If not game over, create a new ball to continue playing.
+        instance_create_layer(room_width/2, room_height/2, "Instances", obj_ball);
+    }

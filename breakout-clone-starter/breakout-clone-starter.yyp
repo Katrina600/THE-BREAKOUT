@@ -26,6 +26,7 @@
   "name":"breakout-clone-starter",
   "resources":[
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},},
+    {"id":{"name":"obj_ball_1","path":"objects/obj_ball_1/obj_ball_1.yy",},},
     {"id":{"name":"obj_ball","path":"objects/obj_ball/obj_ball.yy",},},
     {"id":{"name":"obj_brick_1","path":"objects/obj_brick_1/obj_brick_1.yy",},},
     {"id":{"name":"obj_brick_2","path":"objects/obj_brick_2/obj_brick_2.yy",},},
