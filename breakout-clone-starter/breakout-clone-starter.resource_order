@@ -7,7 +7,6 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"obj_ball_1","order":11,"path":"objects/obj_ball_1/obj_ball_1.yy",},
     {"name":"obj_brick_1","order":6,"path":"objects/obj_brick_1/obj_brick_1.yy",},
     {"name":"obj_brick_2","order":7,"path":"objects/obj_brick_2/obj_brick_2.yy",},
     {"name":"obj_brick_3","order":8,"path":"objects/obj_brick_3/obj_brick_3.yy",},
